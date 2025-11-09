@@ -3,8 +3,13 @@ layout: default
 title: Robert Dolliver
 ---
 
+<h1 align="center">Robert Dolliver</h1>
 <p align="center">
-  <img src="/my_logo_200_200.png" alt="Robert Dolliver logo" width="140" />
+  <em>Technical Training Manager • Documentation Specialist • Learning Systems Architect</em>
+</p>
+
+<p align="center">
+  <img src="/my_logo_200_200.png" alt="Robert Dolliver logo" width="150" style="margin: 1rem 0;" />
 </p>
 
 <div align="center" style="margin: 0.25rem 0 1.25rem;">
@@ -28,7 +33,7 @@ title: Robert Dolliver
 
 Welcome to my professional portfolio website.
 
-I’m a **Technical Training Manager**, **Documentation Specialist**, and **Learning Systems Developer** with over 20 years of experience transforming complex technology into accessible, effective training.
+I’m a **Technical Training Manager**, **Documentation Specialist**, and **Learning Systems Architect** with over 20 years of experience transforming complex technology into accessible, effective training.
 
 ---
 

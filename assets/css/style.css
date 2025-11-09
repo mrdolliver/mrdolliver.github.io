@@ -1,0 +1,10 @@
+body {
+  max-width: 960px;
+  margin: 2rem auto;
+  font-family: -apple-system, system-ui, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  padding: 0 1rem;
+}
+h1, h2, h3 { line-height: 1.25; }
+hr { border: none; border-top: 1px solid #ccc; margin: 2rem 0; }
+.badges img { margin: 0 .3rem; vertical-align: middle; }

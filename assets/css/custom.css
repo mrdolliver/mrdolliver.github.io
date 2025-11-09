@@ -6,7 +6,7 @@
   padding: 2rem 0;
 }
 
-/* Makes the main site title (mrdolliver.github.io) white */
+/* Main site title (mrdolliver.github.io) */
 h1.project-name {
   color: #ffffff !important;
   font-weight: 700;
@@ -14,7 +14,7 @@ h1.project-name {
   margin-bottom: 0.4rem;
 }
 
-/* Elegant underline accent under site title */
+/* Underline accent under site title */
 h1.project-name::after {
   content: "";
   display: block;
@@ -25,7 +25,7 @@ h1.project-name::after {
   border-radius: 2px;
 }
 
-/* Makes the tagline (under mrdolliver.github.io) white and readable */
+/* Tagline under title */
 h2.project-tagline {
   color: #ffffff !important;
   font-weight: 500;
@@ -34,39 +34,36 @@ h2.project-tagline {
 }
 
 /* === BADGE SECTION === */
+/* Force one-line badges on desktop, allow scroll if overflow */
 .hero-badges {
-  display: flex;
-  justify-content: center;
-  flex-wrap: nowrap;           /* keeps all badges on one line */
-  gap: 12px;
+  display: block;
+  text-align: center;
+  white-space: nowrap;         /* keep on one line */
+  overflow-x: auto;            /* scroll if they overflow container */
+  -webkit-overflow-scrolling: touch;
   margin-top: 1rem;
-  overflow-x: auto;            /* allows horizontal scroll on smaller screens */
-  scrollbar-width: none;       /* hides scrollbar in Firefox */
+  scrollbar-width: none;       /* hide FF scrollbar */
 }
+.hero-badges::-webkit-scrollbar { display: none; } /* hide WebKit scrollbar */
 
-.hero-badges::-webkit-scrollbar {
-  display: none;               /* hides scrollbar in Chrome/Safari */
-}
-
+/* Each badge as an inline-block so nowrap works reliably */
+.hero-badges a { display: inline-block; }
 .hero-badges a img {
   height: 30px;                /* slightly larger for readability */
-  margin: 5px;
+  margin: 5px 8px;
   vertical-align: middle;
   transition: all 0.2s ease-in-out;
 }
 
-/* Inline-styled badges fallback */
-p[align="center"] a img {
-  height: 30px;
-  margin: 5px;
-  vertical-align: middle;
-}
+/* Fallback for pages using <p align="center"> badge wrapper */
+p[align="center"].hero-badges { white-space: nowrap; overflow-x: auto; }
+p[align="center"].hero-badges a { display: inline-block; }
+p[align="center"].hero-badges a img { height: 30px; margin: 5px 8px; }
 
-/* Gentle hover glow for badges */
+/* Gentle hover glow */
 .hero-badges a img:hover {
   transform: scale(1.05);
   filter: drop-shadow(0 0 6px rgba(255, 255, 255, 0.6));
-  transition: all 0.2s ease-in-out;
 }
 
 /* === BODY TEXT & HEADINGS === */
@@ -84,47 +81,39 @@ h1, h2, h3, h4 {
   color: #2c662d;
 }
 
-/* === SECTION DIVIDERS === */
+/* Section divider */
 hr {
   border: none;
   border-top: 1px solid #e0e0e0;
   margin: 2rem 0;
 }
 
-/* === LINK COLORS === */
-a {
-  color: #2b6cb0;
-  text-decoration: none;
-}
+/* Links */
+a { color: #2b6cb0; text-decoration: none; }
+a:hover { color: #1a4f7a; text-decoration: underline; }
 
-a:hover {
-  color: #1a4f7a;
-  text-decoration: underline;
-}
-
-/* === HI THERE SECTION === */
+/* “Hi there” section */
 h2#hi-there {
   color: #2c662d;
   margin-top: 2rem;
   text-align: left;
 }
 
-/* === RESPONSIVE ADJUSTMENTS === */
+/* === RESPONSIVE === */
 @media (max-width: 768px) {
-  h1.project-name {
-    font-size: 2rem;
-  }
+  h1.project-name { font-size: 2rem; }
+  h2.project-tagline { font-size: 1.1rem; }
 
-  h2.project-tagline {
-    font-size: 1.1rem;
-  }
-
+  /* On small screens, wrap neatly instead of forcing single line */
   .hero-badges {
-    flex-wrap: wrap;          /* wrap badges neatly on smaller screens */
+    white-space: normal;       /* allow wrap on phones */
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+    gap: 8px 10px;
   }
+  .hero-badges a { display: inline-flex; }
+  .hero-badges a img { height: 26px; margin: 4px 6px; }
 
-  .hero-badges a img {
-    height: 26px;
-  }
+  p[align="center"].hero-badges { white-space: normal; }
 }

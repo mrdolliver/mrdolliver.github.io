@@ -34,5 +34,5 @@ Up-skilling on Cloud, Linux, and Container-based technologies.
 ---
 
 <p style="font-size:14px; color:gray; text-align:center;">
-Built with ❤️ by Robert Dolliver and <a href="https://chat.openai.com" style="color:gray;">ChatGPT</a> · © 2025
+Built with github pages by Robert Dolliver and <a href="https://chat.openai.com" style="color:gray;">ChatGPT</a> · © 2025
 </p>

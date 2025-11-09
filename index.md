@@ -6,17 +6,24 @@ title: Robert Dolliver
 <!-- BADGES centered just beneath the Cayman header -->
 <div class="hero-inject">
   <div class="hero-badges">
-    <a href="https://www.linkedin.com/in/robert-dolliver">
-      <img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-robert--dolliver-0b65c3?logo=linkedin">
+    <!-- LinkedIn -->
+    <a href="https://linkedin.com/in/robert-dolliver" aria-label="LinkedIn">
+      <img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-robert--dolliver-blue?logo=linkedin">
     </a>
-    <a href="mailto:mrdolliver@icloud.com">
-      <img alt="Email" src="https://img.shields.io/badge/Email-mrdolliver%40icloud.com-lightgrey?logo=gmail">
+
+    <!-- Email -->
+    <a href="mailto:robert.edwin.dolliver@gmail.com" aria-label="Email">
+      <img alt="Email" src="https://img.shields.io/badge/Email-robert.edwin.dolliver%40gmail.com-lightgrey?logo=gmail">
     </a>
-    <a href="/Robert_Dolliver_Resume_fl.pdf">
-      <img alt="Résumé / CV" src="https://img.shields.io/badge/PDF-R%C3%A9sum%C3%A9%20%2F%20CV-4a90e2">
+
+    <!-- Resume / CV -->
+    <a href="/Robert_Dolliver_Resume_fl.pdf" aria-label="Résumé/CV (PDF)">
+      <img alt="Résumé / CV" src="https://img.shields.io/badge/R%C3%A9sum%C3%A9%20/%20CV-PDF-0b3d91?logo=adobeacrobatreader&logoColor=white">
     </a>
-    <a href="https://github.com/mrdolliver">
-      <img alt="GitHub" src="https://img.shields.io/badge/GitHub-mrdolliver-000000?logo=github">
+
+    <!-- Portfolio -->
+    <a href="https://github.com/mrdolliver" aria-label="Portfolio">
+      <img alt="Portfolio" src="https://img.shields.io/badge/Portfolio-mrdolliver-black?logo=github">
     </a>
   </div>
 </div>
@@ -39,5 +46,5 @@ with over 20 years of experience transforming complex technology into accessible
 
 ### 🔗 Quick Links
 - [Connect on LinkedIn](https://www.linkedin.com/in/robert-dolliver)  
-- [View my GitHub portfolio](https://github.com/mrdolliver)  
-- [Email me](mailto:mrdolliver@icloud.com)
+- [View my Portfolio](https://github.com/mrdolliver)  
+- [Email me](mailto:robert.edwin.dolliver@gmail.com)

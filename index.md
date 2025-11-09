@@ -2,26 +2,24 @@
 layout: default
 ---
 
+<!-- Badge section -->
 <p align="center" style="margin-top: 0.75rem;">
   <a href="https://linkedin.com/in/robert-dolliver">
-    <img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-robert--dolliver-blue?logo=linkedin">
+    <img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-robert--dolliver-1b66c2?logo=linkedin&logoColor=white" style="height:28px;">
   </a>
   <a href="mailto:robert.edwin.dolliver@gmail.com">
-    <img alt="Email" src="https://img.shields.io/badge/Email-robert.edwin.dolliver%40gmail.com-lightgrey?logo=gmail">
+    <img alt="Email" src="https://img.shields.io/badge/Email-robert.edwin.dolliver%40gmail.com-D14836?logo=gmail&logoColor=white" style="height:28px;">
   </a>
   <a href="./Robert_Dolliver_Resume_fl.pdf">
-    <img alt="PDF" src="https://img.shields.io/badge/PDF-lightgrey">
-  </a>
-  <a href="./Robert_Dolliver_Resume_fl.pdf">
-    <img alt="Résumé / CV" src="https://img.shields.io/badge/R%C3%A9sum%C3%A9%20/%20CV-2f6fdd">
+    <img alt="Résumé / CV" src="https://img.shields.io/badge/R%C3%A9sum%C3%A9%20/%20CV-2f6fdd?logo=adobeacrobatreader&logoColor=white" style="height:28px;">
   </a>
   <a href="https://github.com/mrdolliver">
-    <img alt="Portfolio" src="https://img.shields.io/badge/Portfolio-mrdolliver-black?logo=github">
+    <img alt="Portfolio" src="https://img.shields.io/badge/Portfolio-mrdolliver-000000?logo=github" style="height:28px;">
   </a>
 </p>
 
 ---
 
-## 👋 Hi there!
+## 👋 Hi there, I’m Robert Dolliver
 
 I’m a **Technical Training Manager**, **Documentation Specialist**, and **Learning Systems Architect** with over 20 years of experience transforming complex technology into accessible, effective training.

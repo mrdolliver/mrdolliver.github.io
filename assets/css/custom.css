@@ -38,33 +38,32 @@ h2.project-tagline {
 .hero-badges {
   display: block;
   text-align: center;
-  white-space: nowrap;         /* keep on one line */
-  overflow-x: auto;            /* scroll if they overflow container */
+  white-space: nowrap;         /* keep badges on one line */
+  overflow-x: auto;            /* scroll if overflow */
   -webkit-overflow-scrolling: touch;
   margin-top: 1rem;
   scrollbar-width: none;       /* hide FF scrollbar */
 }
-.hero-badges::-webkit-scrollbar { display: none; } /* hide WebKit scrollbar */
+.hero-badges::-webkit-scrollbar { display: none; }
 
-/* Each badge as an inline-block so nowrap works reliably */
 .hero-badges a { display: inline-block; }
 .hero-badges a img {
-  height: 30px;                /* slightly larger for readability */
+  height: 30px;                /* larger for readability */
   margin: 5px 8px;
   vertical-align: middle;
   transition: all 0.2s ease-in-out;
 }
 
-/* Fallback for pages using <p align="center"> badge wrapper */
-p[align="center"].hero-badges { white-space: nowrap; overflow-x: auto; }
-p[align="center"].hero-badges a { display: inline-block; }
-p[align="center"].hero-badges a img { height: 30px; margin: 5px 8px; }
-
-/* Gentle hover glow */
+/* Hover glow effect */
 .hero-badges a img:hover {
   transform: scale(1.05);
   filter: drop-shadow(0 0 6px rgba(255, 255, 255, 0.6));
 }
+
+/* Fallback for <p align="center"> badge wrapper */
+p[align="center"].hero-badges { white-space: nowrap; overflow-x: auto; }
+p[align="center"].hero-badges a { display: inline-block; }
+p[align="center"].hero-badges a img { height: 30px; margin: 5px 8px; }
 
 /* === BODY TEXT & HEADINGS === */
 body {
@@ -88,32 +87,63 @@ hr {
   margin: 2rem 0;
 }
 
-/* Links */
-a { color: #2b6cb0; text-decoration: none; }
-a:hover { color: #1a4f7a; text-decoration: underline; }
+/* Links (general) */
+a {
+  color: #2b6cb0;
+  text-decoration: none;
+}
+a:hover {
+  color: #1a4f7a;
+  text-decoration: underline;
+}
 
-/* “Hi there” section */
+/* === HI THERE SECTION === */
 h2#hi-there {
   color: #2c662d;
   margin-top: 2rem;
   text-align: left;
 }
 
-/* === RESPONSIVE === */
-@media (max-width: 768px) {
-  h1.project-name { font-size: 2rem; }
-  h2.project-tagline { font-size: 1.1rem; }
+/* === EMAIL LINK STYLE === */
+a[href^="mailto:"] {
+  color: #f5f5f5;  /* soft white tone */
+  text-decoration: underline dotted rgba(255, 255, 255, 0.6);
+  transition: color 0.2s ease;
+}
+a[href^="mailto:"]:hover {
+  color: #ffffff;
+  text-decoration: underline solid #ffffff;
+}
 
-  /* On small screens, wrap neatly instead of forcing single line */
+/* === RESPONSIVE DESIGN === */
+@media (max-width: 768px) {
+  h1.project-name {
+    font-size: 2rem;
+  }
+
+  h2.project-tagline {
+    font-size: 1.1rem;
+  }
+
+  /* Allow wrapping badges neatly on small screens */
   .hero-badges {
-    white-space: normal;       /* allow wrap on phones */
+    white-space: normal;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 8px 10px;
   }
-  .hero-badges a { display: inline-flex; }
-  .hero-badges a img { height: 26px; margin: 4px 6px; }
 
-  p[align="center"].hero-badges { white-space: normal; }
+  .hero-badges a {
+    display: inline-flex;
+  }
+
+  .hero-badges a img {
+    height: 26px;
+    margin: 4px 6px;
+  }
+
+  p[align="center"].hero-badges {
+    white-space: normal;
+  }
 }

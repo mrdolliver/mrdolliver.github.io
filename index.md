@@ -25,3 +25,14 @@ Download my resume, view a portfolio of some of my work, or visit me on LinkedIn
 <a href="mailto:robert.edwin.dolliver@gmail.com">
   <img alt="Email" src="https://img.shields.io/badge/Email-robert.edwin.dolliver%40gmail.com-D14836?logo=gmail&logoColor=white">
 </a>
+
+---
+
+### 🔧 Current Focus
+Up-skilling on Cloud, Linux, and Container-based technologies.  
+
+---
+
+<p style="font-size:14px; color:gray; text-align:center;">
+Built with ❤️ by Robert Dolliver and <a href="https://chat.openai.com" style="color:gray;">ChatGPT</a> · © 2025
+</p>

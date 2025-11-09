@@ -3,17 +3,14 @@ layout: default
 title: Robert Dolliver
 ---
 
-<!-- Hero Section inside the Cayman banner -->
+<!-- HERO SECTION (inside Cayman green header) -->
 <div align="center" style="color: white; margin-top: -1rem;">
 
-  <h1 style="font-size: 2.8em; margin-bottom: 0.2em;">Robert Dolliver</h1>
-  <p style="font-size: 1.25em; font-style: italic; margin-bottom: 1em;">
-    Technical Training Manager • Documentation Specialist • Learning Systems Architect
-  </p>
+  <h1 style="font-size: 2.8em; margin-bottom: 0.4em;">Robert Dolliver</h1>
 
-  <img src="/my_logo_200_200.png" alt="Robert Dolliver logo" width="140" style="margin: 0.5rem 0 1rem;" />
+  <img src="/my_logo_200_200.png" alt="Robert Dolliver logo" width="150" style="margin: 0.5rem 0 1rem;" />
 
-  <div style="margin-bottom: 1.5rem;">
+  <div style="margin-bottom: 1.25rem;">
     <a href="https://www.linkedin.com/in/robert-dolliver">
       <img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-robert--dolliver-blue?logo=linkedin&color=0b65c3">
     </a>

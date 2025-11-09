@@ -1,40 +1,55 @@
-/* --- HERO BADGES: centered + bigger fonts --- */
-.hero-inject {
+/* ===========================
+   HERO: center badges + larger
+   =========================== */
+
+/* Make sure our block centers even if Cayman sets text-align elsewhere */
+.main-content .hero-inject {
   display: block !important;
   width: 100% !important;
   text-align: center !important;
-  margin-top: -0.25rem;
-  margin-bottom: 1.25rem;
+  margin: -0.25rem auto 1.25rem auto !important;
+  padding: 0 !important;
 }
 
-.hero-inject .hero-badges {
-  display: inline-block !important;
-  text-align: center !important;
+/* The badges row: force flex centering with a tiny gap */
+.main-content .hero-inject .hero-badges {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  flex-wrap: wrap !important;
+  gap: 10px 12px !important;
+  margin: 0 auto !important;
+  max-width: 1200px;   /* optional: keep it from spanning super-wide */
 }
 
-.hero-inject .hero-badges img {
-  height: 36px !important;          /* bump size for visibility */
-  vertical-align: middle;
-  margin: 0 10px 0.35rem;
+/* Each badge/link acts like a chip */
+.main-content .hero-inject .hero-badges a {
+  display: inline-flex !important;
+  align-items: center !important;
+}
+
+/* Badge images: bigger, consistent height, hover pop */
+.main-content .hero-inject .hero-badges img {
+  height: 36px !important;         /* increase size */
+  vertical-align: middle !important;
+  margin: 0 0 0.35rem 0 !important;
   transition: transform 0.2s ease;
 }
 
-.hero-inject .hero-badges img:hover {
+.main-content .hero-inject .hero-badges img:hover {
   transform: scale(1.1);
 }
 
-/* --- HERO TEXT (name + tagline) --- */
+/* Title + subtitle in the green header: bigger + white */
 .page-header h1 {
-  font-size: 3rem !important;        /* larger for your name */
-  font-weight: 700;
+  font-size: 3rem !important;
+  font-weight: 700 !important;
 }
 
 .page-header p {
-  font-size: 1.25rem !important;     /* subtitle text */
-  color: #ffffff !important;         /* keep white against green */
+  font-size: 1.25rem !important;
+  color: #ffffff !important;
 }
 
-/* Adjust spacing below the hero bar */
-.page-header {
-  padding-bottom: 0.8rem;
-}
+/* A touch less space under the header */
+.page-header { padding-bottom: 0.8rem !important; }

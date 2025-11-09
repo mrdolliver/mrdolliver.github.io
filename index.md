@@ -29,7 +29,7 @@ Download my resume, view a portfolio of some of my work, or visit me on LinkedIn
 ---
 
 ### 🔧 Current Focus
-Up-skilling on Cloud, Linux, and Container-based technologies.  
+Up-skilling on Cloud, Linux, and Container-based technologies. Open to lokking for part time or short duration contract work. 
 
 ---
 

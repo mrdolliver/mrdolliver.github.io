@@ -1,10 +1,22 @@
-body {
-  max-width: 960px;
-  margin: 2rem auto;
-  font-family: -apple-system, system-ui, Helvetica, Arial, sans-serif;
-  line-height: 1.6;
-  padding: 0 1rem;
+/* Center badges neatly under the Cayman header */
+.hero-inject {
+  text-align: center;
+  margin-top: -0.5rem;
+  margin-bottom: 1.5rem;
 }
-h1, h2, h3 { line-height: 1.25; }
-hr { border: none; border-top: 1px solid #ccc; margin: 2rem 0; }
-.badges img { margin: 0 .3rem; vertical-align: middle; }
+
+.hero-inject .hero-badges img {
+  height: 26px;
+  vertical-align: middle;
+  margin: 0 5px 0.25rem;
+}
+
+/* Tighten spacing below header */
+.page-header {
+  padding-bottom: 0.5rem;
+}
+
+/* Hide the logo until a white version is ready */
+.hero-inject .hero-logo {
+  display: none;
+}

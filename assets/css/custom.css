@@ -2,7 +2,7 @@
    HERO: center badges + larger
    =========================== */
 
-/* Make sure our block centers even if Cayman sets text-align elsewhere */
+/* Ensure our injected block centers and spans the width */
 .main-content .hero-inject {
   display: block !important;
   width: 100% !important;
@@ -11,7 +11,7 @@
   padding: 0 !important;
 }
 
-/* The badges row: force flex centering with a tiny gap */
+/* The badges row: always centered using flex */
 .main-content .hero-inject .hero-badges {
   display: flex !important;
   justify-content: center !important;
@@ -19,18 +19,17 @@
   flex-wrap: wrap !important;
   gap: 10px 12px !important;
   margin: 0 auto !important;
-  max-width: 1200px;   /* optional: keep it from spanning super-wide */
 }
 
-/* Each badge/link acts like a chip */
+/* Badge links behave like small chips */
 .main-content .hero-inject .hero-badges a {
   display: inline-flex !important;
   align-items: center !important;
 }
 
-/* Badge images: bigger, consistent height, hover pop */
+/* Badge images: bigger + hover pop */
 .main-content .hero-inject .hero-badges img {
-  height: 36px !important;         /* increase size */
+  height: 36px !important;
   vertical-align: middle !important;
   margin: 0 0 0.35rem 0 !important;
   transition: transform 0.2s ease;
@@ -40,7 +39,7 @@
   transform: scale(1.1);
 }
 
-/* Title + subtitle in the green header: bigger + white */
+/* Title + subtitle inside the green header */
 .page-header h1 {
   font-size: 3rem !important;
   font-weight: 700 !important;
@@ -51,5 +50,5 @@
   color: #ffffff !important;
 }
 
-/* A touch less space under the header */
+/* Slightly reduce the space under the header */
 .page-header { padding-bottom: 0.8rem !important; }

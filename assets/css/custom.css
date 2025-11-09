@@ -1,27 +1,40 @@
-/* Center and enlarge badges under the Cayman header */
+/* --- HERO BADGES: centered + bigger fonts --- */
 .hero-inject {
-  display: flex;
-  justify-content: center;
-  margin-top: -0.3rem;     /* pull them a bit closer to the green header */
-  margin-bottom: 1.5rem;
+  display: block !important;
+  width: 100% !important;
+  text-align: center !important;
+  margin-top: -0.25rem;
+  margin-bottom: 1.25rem;
 }
 
 .hero-inject .hero-badges {
-  text-align: center;
+  display: inline-block !important;
+  text-align: center !important;
 }
 
 .hero-inject .hero-badges img {
-  height: 32px;             /* larger badge size for readability */
+  height: 36px !important;          /* bump size for visibility */
   vertical-align: middle;
-  margin: 0 8px 0.4rem;
+  margin: 0 10px 0.35rem;
   transition: transform 0.2s ease;
 }
 
 .hero-inject .hero-badges img:hover {
-  transform: scale(1.08);
+  transform: scale(1.1);
 }
 
-/* Adjust spacing below the hero */
+/* --- HERO TEXT (name + tagline) --- */
+.page-header h1 {
+  font-size: 3rem !important;        /* larger for your name */
+  font-weight: 700;
+}
+
+.page-header p {
+  font-size: 1.25rem !important;     /* subtitle text */
+  color: #ffffff !important;         /* keep white against green */
+}
+
+/* Adjust spacing below the hero bar */
 .page-header {
-  padding-bottom: 0.6rem;
+  padding-bottom: 0.8rem;
 }

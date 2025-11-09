@@ -1,36 +1,83 @@
-/* === Hero Header and Subtitle === */
-.hero-inject h1 {
-  font-size: 2.6rem;
-  font-weight: 700;
-  color: #fff;
-  margin-bottom: 0.5rem;
+/* === HERO HEADER & TAGLINE === */
+.page-header {
+  text-align: center;
+  color: #ffffff;
 }
 
-.hero-inject p {
-  font-size: 1.3rem; /* slightly larger to match badge text size */
+/* Makes the tagline (under mrdolliver.github.io) white and readable */
+h2.project-tagline {
+  color: #ffffff !important;
   font-weight: 500;
-  color: #fff;
+  font-size: 1.3rem;
+  margin-top: 0.5rem;
 }
 
-/* === Centered Badge Styling === */
+/* === BADGE SECTION === */
 .hero-badges {
   text-align: center;
-  margin-top: 1.25rem;
+  margin-top: 1rem;
 }
 
 .hero-badges a img {
-  height: 26px; /* increased slightly from ~22px */
-  margin: 4px 6px;
+  height: 28px;               /* increased slightly for readability */
+  margin: 5px 7px;
   vertical-align: middle;
 }
 
-/* === Body Text and Headings === */
-body {
-  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  color: #333;
+/* For inline-styled badges inside markdown (same effect) */
+p[align="center"] a img {
+  height: 28px;
+  margin: 5px 7px;
+  vertical-align: middle;
 }
 
-h2, h3 {
-  color: #2c662d;
+/* === BODY TEXT & HEADINGS === */
+body {
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: #333333;
+  line-height: 1.6;
+  font-size: 1.05rem;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4 {
   font-weight: 600;
+  color: #2c662d;
+}
+
+/* === SECTION DIVIDERS === */
+hr {
+  border: none;
+  border-top: 1px solid #e0e0e0;
+  margin: 2rem 0;
+}
+
+/* === LINK COLORS === */
+a {
+  color: #2b6cb0;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #1a4f7a;
+  text-decoration: underline;
+}
+
+/* === HI THERE SECTION === */
+h2#hi-there {
+  color: #2c662d;
+  margin-top: 2rem;
+  text-align: left;
+}
+
+/* === SMALL SCREEN ADJUSTMENTS === */
+@media (max-width: 768px) {
+  h2.project-tagline {
+    font-size: 1.1rem;
+  }
+
+  .hero-badges a img {
+    height: 24px;
+  }
 }

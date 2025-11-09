@@ -34,36 +34,31 @@ h2.project-tagline {
 }
 
 /* === BADGE SECTION === */
-/* Force one-line badges on desktop, allow scroll if overflow */
+/* Keep one line on wide screens; allow scroll if overflow */
 .hero-badges {
   display: block;
   text-align: center;
-  white-space: nowrap;         /* keep badges on one line */
-  overflow-x: auto;            /* scroll if overflow */
+  white-space: nowrap;
+  overflow-x: auto;
   -webkit-overflow-scrolling: touch;
   margin-top: 1rem;
-  scrollbar-width: none;       /* hide FF scrollbar */
+  scrollbar-width: none;
 }
 .hero-badges::-webkit-scrollbar { display: none; }
 
 .hero-badges a { display: inline-block; }
 .hero-badges a img {
-  height: 30px;                /* larger for readability */
+  height: 30px;
   margin: 5px 8px;
   vertical-align: middle;
   transition: all 0.2s ease-in-out;
 }
 
-/* Hover glow effect */
+/* Hover glow */
 .hero-badges a img:hover {
   transform: scale(1.05);
   filter: drop-shadow(0 0 6px rgba(255, 255, 255, 0.6));
 }
-
-/* Fallback for <p align="center"> badge wrapper */
-p[align="center"].hero-badges { white-space: nowrap; overflow-x: auto; }
-p[align="center"].hero-badges a { display: inline-block; }
-p[align="center"].hero-badges a img { height: 30px; margin: 5px 8px; }
 
 /* === BODY TEXT & HEADINGS === */
 body {
@@ -88,25 +83,15 @@ hr {
 }
 
 /* Links (general) */
-a {
-  color: #2b6cb0;
-  text-decoration: none;
-}
-a:hover {
-  color: #1a4f7a;
-  text-decoration: underline;
-}
+a { color: #2b6cb0; text-decoration: none; }
+a:hover { color: #1a4f7a; text-decoration: underline; }
 
-/* === HI THERE SECTION === */
-h2#hi-there {
-  color: #2c662d;
-  margin-top: 2rem;
-  text-align: left;
-}
+/* “Hi there” section */
+h2#hi-there { color: #2c662d; margin-top: 2rem; text-align: left; }
 
-/* === EMAIL LINK STYLE === */
+/* Email link polish */
 a[href^="mailto:"] {
-  color: #f5f5f5;  /* soft white tone */
+  color: #f5f5f5;
   text-decoration: underline dotted rgba(255, 255, 255, 0.6);
   transition: color 0.2s ease;
 }
@@ -115,17 +100,12 @@ a[href^="mailto:"]:hover {
   text-decoration: underline solid #ffffff;
 }
 
-/* === RESPONSIVE DESIGN === */
+/* === RESPONSIVE === */
 @media (max-width: 768px) {
-  h1.project-name {
-    font-size: 2rem;
-  }
+  h1.project-name { font-size: 2rem; }
+  h2.project-tagline { font-size: 1.1rem; }
 
-  h2.project-tagline {
-    font-size: 1.1rem;
-  }
-
-  /* Allow wrapping badges neatly on small screens */
+  /* wrap badges neatly on phones */
   .hero-badges {
     white-space: normal;
     display: flex;
@@ -133,17 +113,6 @@ a[href^="mailto:"]:hover {
     justify-content: center;
     gap: 8px 10px;
   }
-
-  .hero-badges a {
-    display: inline-flex;
-  }
-
-  .hero-badges a img {
-    height: 26px;
-    margin: 4px 6px;
-  }
-
-  p[align="center"].hero-badges {
-    white-space: normal;
-  }
+  .hero-badges a { display: inline-flex; }
+  .hero-badges a img { height: 26px; margin: 4px 6px; }
 }

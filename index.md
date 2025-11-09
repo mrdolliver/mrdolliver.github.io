@@ -1,55 +1,62 @@
-# Robert Dolliver
+---
+layout: default
+title: Robert Dolliver
+---
 
 <p align="center">
-  <img src="/my_logo_200_200.png" alt="Robert Dolliver logo" style="display:block;margin:1.5rem auto;max-height:120px;">
+  <img src="/my_logo_200_200.png" alt="Robert Dolliver logo" style="display:block;margin:1.25rem auto;max-height:140px;">
 </p>
 
-<p align="center" class="badges">
-  <a href="https://linkedin.com/in/robert-dolliver">
-    <img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-robert--dolliver-blue?logo=linkedin">
-  </a>
-  <a href="mailto:mrdolliver@icloud.com">
-    <img alt="Email" src="https://img.shields.io/badge/Email-mrdolliver%40icloud.com-lightgrey?logo=gmail">
-  </a>
-  <a href="/Robert_Dolliver_Resume_fl.pdf">
-    <img alt="PDF Professional Résumé" src="https://img.shields.io/badge/PDF-Professional%20R%C3%A9sum%C3%A9-0b3d91?logo=adobeacrobat&logoColor=white">
-  </a>
-  <a href="https://github.com/mrdolliver">
-    <img alt="GitHub" src="https://img.shields.io/badge/GitHub-mrdolliver-black?logo=github">
-  </a>
-</p>
+# 👋 Hi there! I'm Robert Dolliver
+
+Welcome to my professional portfolio website.  
+I'm a **Technical Training Manager**, **Documentation Specialist**, and **Learning Systems Developer** with over 20 years of experience transforming complex technology into accessible, effective training.
 
 ---
 
-## 👋 Hi, I’m Robert Dolliver
-
-**Technical Training Manager** · **Documentation Specialist** · **Cloud & Network Systems**
-
-With over **20 years of experience** in telecom, networking, and cloud systems, I build training programs and documentation that make complex technology understandable and repeatable.
+## 📄 [Download My Resume (PDF)](Robert_Dolliver_Resume_fl.pdf)
 
 ---
 
-## ⚡ At a Glance
-- 20+ years building enterprise-level training and documentation programs  
-- Experienced in ILT/VILT, LMS, and self-paced e-learning  
-- Skilled with Markdown, Camtasia, Captivate, and Linux environments  
-- Cloud projects on **Oracle Cloud**, **GCP**, and **AWS**
+## 🚀 What I Do
+- Develop and deliver scalable technical training programs  
+- Create clear, structured documentation for complex systems  
+- Build blended learning experiences using modern tools  
+- Lead cross-functional teams to align training with business goals  
 
 ---
 
-## 🧰 Technical Focus
-- Kubernetes • Docker • CI/CD • Networking (Layer 2/3/4)
-- GitHub Pages • Markdown • Linux (Ubuntu, macOS, BSD)
-- Documentation Automation • Cloud Infrastructure Training
+## 🧠 Skills & Expertise
+**Instructional Design:** Curriculum Design · SCORM · Captivate · Camtasia  
+**Learning Systems:** Moodle · Totara · Content Standards · Analytics  
+**Documentation Tools:** Markdown · Snagit · GIMP · Audacity  
+**Technical Foundations:** Networking · IP Fundamentals · Linux  
+**Leadership:** Mentoring · Team Management · Continuous Improvement  
 
 ---
 
-## 📂 Projects & Samples
-- **Portfolio:** [https://mrdolliver.github.io](https://mrdolliver.github.io)  
-- **GitHub:** [https://github.com/mrdolliver](https://github.com/mrdolliver)
+## 💼 Experience
+### Casa Systems — *Training Manager (2013–2024)*
+- Led a training team and developed scalable self-paced courses.
+- Improved learner completion and onboarding metrics by 15–20%.
+- Integrated AI narration and analytics into course development.
+
+### Single Digits — *Training Manager / Interim Support Manager (2008–2013)*
+- Designed and managed technical training and Tier 1–2 support.
+- Developed certification programs and improved staff competency.
+
+### Cisco Systems — *Instructor / Developer (2003–2008)*
+- Delivered and authored product training for 200+ engineers annually.
+- Developed labs and written materials to align with new software releases.
 
 ---
 
-<p align="center" style="color:gray;">
-  © Robert Dolliver — Built with Markdown + GitHub Pages
+## 🔗 Connect With Me
+- [LinkedIn](https://linkedin.com/in/robert-dolliver)  
+- [GitHub](https://github.com/mrdolliver)
+
+---
+
+<p align="center">
+  <small>© 2025 Robert Dolliver — Built with ❤️ using GitHub Pages (Cayman theme)</small>
 </p>

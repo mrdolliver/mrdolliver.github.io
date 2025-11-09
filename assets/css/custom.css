@@ -2,6 +2,16 @@
 .page-header {
   text-align: center;
   color: #ffffff;
+  background: linear-gradient(120deg, #155799, #159957);
+  padding: 2rem 0;
+}
+
+/* Makes the main site title (mrdolliver.github.io) white */
+h1.project-name {
+  color: #ffffff !important;
+  font-weight: 700;
+  font-size: 2.5rem;
+  margin-bottom: 0.4rem;
 }
 
 /* Makes the tagline (under mrdolliver.github.io) white and readable */
@@ -9,7 +19,7 @@ h2.project-tagline {
   color: #ffffff !important;
   font-weight: 500;
   font-size: 1.3rem;
-  margin-top: 0.5rem;
+  margin-top: 0.25rem;
 }
 
 /* === BADGE SECTION === */
@@ -19,12 +29,12 @@ h2.project-tagline {
 }
 
 .hero-badges a img {
-  height: 28px;               /* increased slightly for readability */
+  height: 28px;               /* slightly larger for readability */
   margin: 5px 7px;
   vertical-align: middle;
 }
 
-/* For inline-styled badges inside markdown (same effect) */
+/* Inline-styled badges fallback */
 p[align="center"] a img {
   height: 28px;
   margin: 5px 7px;
@@ -71,8 +81,12 @@ h2#hi-there {
   text-align: left;
 }
 
-/* === SMALL SCREEN ADJUSTMENTS === */
+/* === RESPONSIVE ADJUSTMENTS === */
 @media (max-width: 768px) {
+  h1.project-name {
+    font-size: 2rem;
+  }
+
   h2.project-tagline {
     font-size: 1.1rem;
   }

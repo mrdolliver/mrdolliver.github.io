@@ -14,6 +14,17 @@ h1.project-name {
   margin-bottom: 0.4rem;
 }
 
+/* Elegant underline accent under site title */
+h1.project-name::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 3px;
+  background-color: #ffffff;
+  margin: 0.6rem auto 0;
+  border-radius: 2px;
+}
+
 /* Makes the tagline (under mrdolliver.github.io) white and readable */
 h2.project-tagline {
   color: #ffffff !important;
@@ -24,21 +35,38 @@ h2.project-tagline {
 
 /* === BADGE SECTION === */
 .hero-badges {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;           /* keeps all badges on one line */
+  gap: 12px;
   margin-top: 1rem;
+  overflow-x: auto;            /* allows horizontal scroll on smaller screens */
+  scrollbar-width: none;       /* hides scrollbar in Firefox */
+}
+
+.hero-badges::-webkit-scrollbar {
+  display: none;               /* hides scrollbar in Chrome/Safari */
 }
 
 .hero-badges a img {
-  height: 28px;               /* slightly larger for readability */
-  margin: 5px 7px;
+  height: 30px;                /* slightly larger for readability */
+  margin: 5px;
   vertical-align: middle;
+  transition: all 0.2s ease-in-out;
 }
 
 /* Inline-styled badges fallback */
 p[align="center"] a img {
-  height: 28px;
-  margin: 5px 7px;
+  height: 30px;
+  margin: 5px;
   vertical-align: middle;
+}
+
+/* Gentle hover glow for badges */
+.hero-badges a img:hover {
+  transform: scale(1.05);
+  filter: drop-shadow(0 0 6px rgba(255, 255, 255, 0.6));
+  transition: all 0.2s ease-in-out;
 }
 
 /* === BODY TEXT & HEADINGS === */
@@ -91,7 +119,12 @@ h2#hi-there {
     font-size: 1.1rem;
   }
 
+  .hero-badges {
+    flex-wrap: wrap;          /* wrap badges neatly on smaller screens */
+    justify-content: center;
+  }
+
   .hero-badges a img {
-    height: 24px;
+    height: 26px;
   }
 }

@@ -1,8 +1,9 @@
 /* ===========================
-   HERO: center badges + larger
+   CUSTOM STYLES FOR ROBERT DOLLIVER PORTFOLIO
+   (GitHub Pages – Cayman Theme)
    =========================== */
 
-/* Ensure our injected block centers and spans the width */
+/* --- HERO: Center badges & adjust spacing --- */
 .main-content .hero-inject {
   display: block !important;
   width: 100% !important;
@@ -11,7 +12,7 @@
   padding: 0 !important;
 }
 
-/* The badges row: always centered using flex */
+/* Badges row – centered and responsive */
 .main-content .hero-inject .hero-badges {
   display: flex !important;
   justify-content: center !important;
@@ -21,17 +22,17 @@
   margin: 0 auto !important;
 }
 
-/* Badge links behave like small chips */
+/* Badge links – inline chips with hover grow */
 .main-content .hero-inject .hero-badges a {
   display: inline-flex !important;
   align-items: center !important;
 }
 
-/* Badge images: bigger + hover pop */
+/* Badge images – bigger and consistent */
 .main-content .hero-inject .hero-badges img {
-  height: 36px !important;
+  height: 36px !important;              /* larger, matches subtitle */
   vertical-align: middle !important;
-  margin: 0 0 0.35rem 0 !important;
+  margin: 0 8px 0.35rem 8px !important;
   transition: transform 0.2s ease;
 }
 
@@ -39,16 +40,47 @@
   transform: scale(1.1);
 }
 
-/* Title + subtitle inside the green header */
+/* --- TITLE + SUBTITLE inside green header --- */
 .page-header h1 {
-  font-size: 3rem !important;
+  font-size: 3rem !important;           /* large banner title */
   font-weight: 700 !important;
-}
-
-.page-header p {
-  font-size: 1.25rem !important;
   color: #ffffff !important;
+  margin-bottom: 0.3rem;
 }
 
-/* Slightly reduce the space under the header */
-.page-header { padding-bottom: 0.8rem !important; }
+/* Subtitle text under name */
+.page-header p {
+  font-size: 1.6rem !important;         /* matches badge size visually */
+  font-weight: 500 !important;
+  color: #ffffff !important;
+  letter-spacing: 0.25px;
+  margin-top: 0.25rem;
+  margin-bottom: 0.5rem;
+}
+
+/* --- SPACING BELOW HEADER --- */
+.page-header {
+  padding-bottom: 0.8rem !important;    /* tighter for better composition */
+}
+
+/* --- GENERAL TYPOGRAPHY TWEAKS --- */
+body {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #2d2d2d;
+}
+
+/* Links: softer blue */
+a {
+  color: #0366d6;
+}
+
+a:hover {
+  color: #024ea4;
+  text-decoration: none;
+}
+
+/* --- OPTIONAL: Hide logo until white version is ready --- */
+.hero-inject .hero-logo {
+  display: none !important;
+}

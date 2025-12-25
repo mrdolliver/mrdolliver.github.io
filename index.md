@@ -1,7 +1,3 @@
----
-layout: default
----
-
 <!-- Badge Row -->
 <p class="hero-badges">
   <a href="https://linkedin.com/in/robert-dolliver">
@@ -13,6 +9,14 @@ layout: default
   <a href="https://github.com/mrdolliver">
     <img alt="Portfolio" src="https://img.shields.io/badge/Portfolio-mrdolliver-000000?logo=github">
   </a>
+</p>
+
+<!-- Profile Photo -->
+<p align="center" style="margin-top: 18px; margin-bottom: 6px;">
+  <img src="my_headshot.jpg"
+       alt="Robert Dolliver"
+       width="160"
+       style="border-radius:50%; border:2px solid #444;">
 </p>
 
 ---
